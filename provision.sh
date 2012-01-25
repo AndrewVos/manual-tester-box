@@ -1,0 +1,15 @@
+#!/bin/bash
+
+apt-get install -y curl
+
+function install_ruby
+{
+  bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
+
+  source /usr/local/rvm/scripts/rvm
+
+  rvm install 1.9.3
+  rvm use 1.9.3
+}
+
+install_ruby
