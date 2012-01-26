@@ -6,6 +6,8 @@ Install Ruby DevKit (if on Windows)
 gem install vagrant
 ```
 
+From the manual-tester-box
+
 ```
-vagrant box add ubuntu-lucid-32 http://files.vagrantup.com/lucid32.box
+vagrant up
 ```
